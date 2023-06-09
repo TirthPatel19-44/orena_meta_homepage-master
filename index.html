@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="sass/main.css" />
+	<title>Home Page</title>
+	<script defer src="https://code.jquery.com/jquery-3.7.0.min.js"
+		integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+	<script defer src="index.js"></script>
+</head>
+
+<body>
+	<header class="header" id="header">
+		<div class="logo-box">
+			<img class="logo-box__img" src="images/jord-logo.png" alt="Logo" />
+		</div>
+		<nav class="nav-box">
+			<div class="nav-box__item" id="home">
+				<h2>Home</h2>
+			</div>
+			<div class="nav-box__item">
+				<h2>
+					<a href="https://www.jord.com.au/" id="company-website">Company Website</a>
+				</h2>
+			</div>
+			<div class="nav-box__item" id="about-us">
+				<h2>About Us</h2>
+			</div>
+		</nav>
+	</header>
+
+	<main class="main-section" id="main-section">
+		<div class="joinin-section">
+			<div class="heading">
+				<h1 class="heading__text">Jord International</h1>
+				<div class="heading__sub">
+					<span class="lines"></span>
+					<span class="heading__sub-text heading__sub-text--animate-1">50</span>
+					<span class="heading__sub-text heading__sub-text--animate-2">Years</span>
+					<span class="heading__sub-text heading__sub-text--animate-3">of</span>
+					<span class="heading__sub-text heading__sub-text--animate-4">Ideas</span>
+					<span class="heading__sub-text heading__sub-text--animate-5">Engineered</span>
+					<span class="lines"></span>
+				</div>
+			</div>
+			<div class="form-section">
+				<form action="" class="form">
+					<div class="form__heading">
+						<h2 class="form__heading-text">
+							Join By Filling In the Information
+						</h2>
+					</div>
+					<div class="form__input-box">
+						<label class="form__input-label" for="first-name">First Name</label>
+						<input class="form__input-element" type="text" placeholder="First Name" id="first-name" />
+					</div>
+					<div class="form__input-box">
+						<label class="form__input-label" for="last-name">Last Name</label>
+						<input class="form__input-element" type="text" placeholder="Last Name" id="last-name" />
+					</div>
+					<div class="form__input-box">
+						<label class="form__input-label" for="email-id">Email-id</label>
+						<input class="form__input-element margin-left-fixup" type="email" placeholder="Email-id"
+							id="email-id" />
+					</div>
+
+					<button type="submit" href="" class="btn">Join In</button>
+					<p class="error-message hidden">Please Fill Appropraite Values</p>
+				</form>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer" id="footer">
+		<div class="about-section">
+			<h3 class="about-section__heading">About Jord</h3>
+			<p class="about-section__text">
+				Jord is a privately-owned, international company that is fast
+				approaching five decades of steady, organic growth, serving our
+				customers with innovation, value and reliability.
+			</p>
+		</div>
+		<div class="jv-section">
+			<div class="jv-section__heading">
+				<h3>Jord International Pty Ltd</h3>
+			</div>
+			<p class="jv-section__text">
+				Level 1, 40 Oxley Street St Leonards, NSW, 2065 Sydney, Australia
+			</p>
+			<p class="jv-section__text">
+				Tel: +61 2 8425 1500
+				<span class="jv-section__contact-divider"></span> E-mail:
+				sydney@jord.com.au
+			</p>
+			<a href="https://www.youtube.com/channel/UCxygOMkIaAlJNaRKGi_pmLA"><img class="jv-section__icon"
+					src="images/icons/youtube_icon.png" alt="Youtube Icon" /></a>
+			<a href="https://www.linkedin.com/company/jordinternational/"><img class="jv-section__icon"
+					src="images/icons/linkedin_icon.png" alt="Linked In Icon" /></a>
+		</div>
+	</footer>
+	<!-- <script>
+		const firstName = $("#first-name");
+		const lastName = $("#last-name");
+		const email = $("#email-id");
+		const header = $("#header");
+		const home = $("#home");
+		const aboutUs = $("#about-us");
+		const mainSection = $("#main-section");
+		const footer = $("#footer");
+		const btn = $(".btn");
+		const errorMessage = $(".error-message");
+
+		const postUrl = "";
+
+		const websiteUrl = "https://www.youtube.com/";
+
+		//sticky navigation
+		const headerHeight = header[0].getBoundingClientRect().height;
+
+		$(window).scroll(function () {
+			let scroll = 0;
+			scroll = $(window).scrollTop();
+
+			if (scroll >= headerHeight + 30) {
+				header.addClass("sticky");
+			} else {
+				header.removeClass("sticky");
+			}
+		});
+
+		//scroll to section
+
+		home.click((e) => {
+			mainSection[0].scrollIntoView({
+				behavior: "smooth",
+			});
+		});
+
+		aboutUs.click((e) => {
+			footer[0].scrollIntoView({
+				behavior: "smooth",
+			});
+		});
+	</script> -->
+</body>
+
+</html>
